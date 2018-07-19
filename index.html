@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <title>ＣＳＳ網頁練習作品</title>
+        <meta name="description" content="這是老郭的練習">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <h1>金曲獎</h1>
+            <p>
+            </p>
+        <form name="login">
+            帳號：<input name="account" type="text" size="10" placeholder="請輸入帳號"><br><!--命名 型態 長度-->
+            密碼：<input name="password" type="password" size="8"><br>
+            <input type="submit" value="點我登入"><!--按鈕顯示文字-->
+        </form>
+        
+        <form name="choose">
+            <fieldset><!--fieldset可視覺上將多個欄位框在一起-->
+            <h3>調查表</h3>
+            <input name="sex" type="radio" value="male">男<!--radio建立多選一-->
+            <input name="sex" type="radio" value="female">女<br>
+            <hr>
+            你最喜愛的明星？<br>
+            <input name="topic" type="checkbox" value="eason">陳奕迅
+            <input name="topic" type="checkbox" value="lala">徐佳瑩
+            <input name="topic" type="checkbox" value="lu">盧廣仲
+            <input name="topic" type="checkbox" value="jj">林俊傑
+            <input name="topic" type="checkbox" value="amei">阿妹
+            <hr>
+            你喜歡這次的金曲獎頒獎方式嗎？<br>
+            <hr>
+            不喜歡<input name="score" type="range" min="1" max="5">喜歡<!--type="range" means slidebar-->
+            <hr>
+            希望下次的主色系為：<br>
+            <input name="color" type="color" value="#ffff00"><br>
+            <hr>
+            您覺得今年誰是大黑馬？<br>
+            <select name="choice">
+                <option>茄子蛋<!--結束標籤可省/option-->
+                <option value="1">徐佳瑩
+                <option value="2">盧廣仲<!--加上value為簡化伺服器端處理回傳值-->
+            </select>
+            <hr>
+            樂團你最喜歡誰？<br>
+            <select name="group name">
+                <optgroup label="五月天"><!--optgroup與option可將下拉式選單分類-->
+                    <option value="1">阿信
+                    <option value="2">石頭
+                    <option value="3">怪獸
+                    <option value="4">瑪莎
+                </optgroup>
+                <optgroup label="滅火器">
+                    <option value="5">大正
+                    <option value="6">大正與他的好朋友
+                </optgroup>
+                <optgroup label="茄子蛋">
+                    <option value="7">主唱
+                    <option value="8">不是主唱
+                </optgroup>
+                </select>
+                <br>
+                您的生日：<br>
+                <input name="birth" type="date"><br>
+                <label>您的電話號碼：<br><!--運用label將文字與輸入欄位包在一起，點選文字即跳至輸入框-->
+                <input name="tel" type="tel" autocomplete="off"><br></label><!--type定義為tel 手機用戶使用可跑出數字鍵盤--><!--autocomplete自動完成-->
+                意見回饋：<br>
+                <textarea name="comment" rows="5" cols="25" required placeholder="歡迎提供意見..."></textarea><br>
+                <!--textarea為輸入文字框 placeholder為提示字樣--><!--required代表必填欄位-->
+            </fieldset>
+            <input type="reset" value="清除重填">
+            <input type="submit" value="填完送出">
+            
+            
+        </form>
+        
+        <h2>簡介</h2>
+            <p>金曲獎（英語譯名：Golden Melody Awards，縮寫為GMA）是臺灣規模最大的音樂獎，也是華人地區兼具榮譽及影響力的大型音樂獎勵活動之一，與金馬獎、金鐘獎並列為臺灣三大娛樂獎，合稱為「三金」。於1990年首次舉辦，每年頒發一次。現今獎項分為「流行音樂」（簡稱流行類）與「傳統暨藝術音樂」（簡稱傳藝類）兩大類別，兩者分開舉辦頒獎典禮，流行類由文化部影視及流行音樂產業局主辦，傳藝類則由國立傳統藝術中心主辦。
+            </p>
+        <h3>29屆入圍</h3>
+            
+                <table>
+                    <tr>
+                        <th>最佳國語男歌手</th>
+                        <td>宋念宇/同在</td>
+                        <td>李玖哲／李玖哲"Will You Remember</td>
+                        <td><a href="#eason">陳奕迅／C'mon In~</a><!--運用id識別碼選擇器當作錨點--></td>
+                        <td>林俊傑／偉大的渺小</td>
+                        <td>許書豪／HOW</td>
+                    </tr>
+                    
+                     <tr>
+                        <th>最佳國語女歌手</th>
+                        <td>呂薔／O_LOVE</td>
+                        <td>徐佳瑩／心裡學</td>
+                        <td>Faye 飛／小太空</td>
+                        <td>aMEI／偷故事的人</td>
+                        <td>彭佳慧／我想念我自己</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>最佳新人</th>
+                        <td>鄭興／忽然有一天，我離開了台北 </td>
+                        <td>茄子蛋／卡通人物 </td>
+                        <td>J.Sheon／街巷</td>
+                        <td>李權哲／醒著不醉</td>
+                        <td>閻奕格／我有我自己</td>
+                        <td>蘇珮卿／我們都是寂寞的</td>
+                        <td>丁世光／神經誌</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>最佳國語專輯</th>
+                        <td>忽然有一天，我離開了台北／﹙演唱者：鄭興﹚</td>
+                        <td>心裡學／﹙演唱者：徐佳瑩﹚</td>
+                        <td>C'mon In~／﹙演唱者：陳奕迅﹚</td>
+                        <td>偷故事的人／﹙演唱者：aMEI﹚</td>
+                        <td>偉大的渺小／﹙演唱者：林俊傑﹚</td>
+                        <td>神經誌／﹙演唱者：丁世光﹚</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>最佳年度歌曲</th>
+                        <td>有 無 (片尾曲) To Have, or Not To Have《大佛普拉斯的電影配樂》／﹙演唱 者：林生祥﹚</td>
+                        <td>長途夜車《進擊下半場 Begin The Second Half》／﹙演唱 者： 滅火器﹚</td>
+                        <td>魚仔《魚仔》／添翼創越工作室﹙演唱者：盧廣仲﹚</td>
+                        <td>致觀音山《家 III》／種子音樂有限公司﹙演唱者：羅大佑﹚</td>
+                        <td>偉大的渺小《偉大的渺小》／﹙演唱者：林俊傑﹚</td>
+                    </tr>
+
+                </table>
+        
+        <h4>29屆得獎名單</h4>
+            
+                <table>
+                <tr>
+                    <th>最佳國語男歌手</th>
+                    <td>陳奕迅／C'mon In~</td>
+                <tr>
+                    <th>最佳國語女歌手</th>
+                    <td>徐佳瑩／心裡學</td>
+                </tr>
+                <tr>
+                    <th>最佳國語專輯</th>
+                    <td>心裡學／﹙演唱者：徐佳瑩﹚</td>
+                </tr>
+                <tr>
+                    <th>最佳年度歌曲</th>
+                    <td>魚仔《魚仔》／添翼創越工作室﹙演唱者：盧廣仲﹚</td>
+                </tr>    
+                
+                </table>
+                
+            
+        <h4 id="eason">歌手介紹</h4><!--運用id識別碼選擇器-->
+           <section>
+            <p>
+            <span class="name";>陳奕迅</span><img src="photo/500x500.jpg" width="20%" height="20%"><br>
+            陳奕迅（Eason Chan Yick-shun，1974年7月27日－），香港歌手及演員，曾擔任第十屆香港演藝人協會副會長，曾獲美國《時代雜誌》形容為影響香港樂壇風格的人物[7]。他是最具代表性的粵語流行音樂男歌手和90年代新秀冠軍之一，千禧年香港最成功的男歌手之一，獲得「新一代歌神」之稱，是深受年輕樂迷歡迎的人物。[8][9][10]。2010年，陳奕迅入選全球華人音樂殿堂—中國華語金曲獎「30年經典評選」，成為1990年代出道歌手唯一代表。<br>
+            <a href="https://www.youtube.com/watch?v=bmU5kWsTjNU" target="_blank">點我看youtube</a>
+            
+            </p>
+            </section>
+        <h4>專輯介紹</h4>
+            <p>
+            </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4V3hxNyiwaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>><!--iframe嵌入影片或地圖-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24401.82172199349!2d121.53767660096004!3d25.050741760159003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe81eb85771%3A0x682251d5c6f37a58!2z6Ie65YyX5bCP5beo6JuL!5e0!3m2!1szh-TW!2stw!4v1531193781294" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        <h4>陳奕迅</h4>
+            <img class="left"
+                 src="photo/eason.jpeg">
+        <h2>Eason</h2>
+        <p>陳奕迅，香港歌手及演員，曾擔任第十屆香港演藝人協會副會長，曾獲美國《時代雜誌》形容為影響香港樂壇風格的人物。他是最具代表性的粵語流行音樂男歌手和90年代新秀冠軍之一，千禧年香港最成功的男歌手之一，獲得「新一代歌神」之稱，是深受年輕樂迷歡迎的人物。</p>
+        <hr>
+        <div class="left">上一頁</div>
+        <div class="right">下一頁</div>
+    </body>
+
+</html>

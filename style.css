@@ -1,0 +1,53 @@
+table{/*元素選擇器*/
+    border: solid 5px yellow;
+    border-spacing: 10px;
+}
+
+th,td{
+    border: solid 2px aqua;
+    }
+
+th{
+    background-color: beige;
+    
+    }
+
+h1{
+    
+    background-color: yellow;
+    font-size: 40px;
+    font-family: 微軟正黑體;
+    text-align: center;
+}
+h2{
+    border-left: solid 6px #6b3008;
+    padding-left: 6px;
+}
+
+h3{border-left: solid 6px #6b3008;
+    padding-left: 6px;
+}
+
+a:hover{color: #f76b04}
+a:link{color: #ff00f5}
+
+h4{
+    text-align: center;
+}
+
+
+
+.name{/*類別選擇器*/
+    font-style: normal; 
+    color:blue; 
+    font-weight:bold;
+    font-size: 30px;
+}
+
+.right {float:right}
+.left {float:left}
+
+#eason{
+    color: red;
+    background-color: yellow;
+}
